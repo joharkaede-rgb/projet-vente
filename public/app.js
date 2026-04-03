@@ -73,4 +73,27 @@ alt="${p.title}">
 <div><strong>$
 {p.price.toLocaleString('fr-FR')
 } Ar</strong></div>
-  
+  <div
+style="margin-top:.5rem;">
+<button class="btn
+add-btn" data-id="$
+{p.id}">Ajouter au panier</
+button>
+</div>
+productsEl.appendChild(card);
+});
+document.querySelectorAll('.add-btn').fo
+rEach(bb.addEventListener('click', (e)
+} =
+const id = e.target.dataset.id;
+addToCart(id);
+}));
+}
+function addToCart(id){
+const prod = products.find(p ⇒ p.id
+=== id);
+if(!prod) return;
+const existing = cart.find(i ⇒ i.id ===
+id);
+if(existing) existing.quantity += 1;
+else cart.push({ id: prod.id, title:
