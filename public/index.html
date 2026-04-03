@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projet Vente — Marketplace Malagasy</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">E‑Varotra</h1>
+      <nav>
+        <button id="view-cart-btn" class="btn">Panier (<span id="cart-count">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+   <main class="container">
+    <section class="hero">
+      <h2>Marché traditionnel — produits locaux</h2>
+      <p>Paiement : MVola / Airtel Money (mock). Prix affichés en Ariary (Ar).</p>
+    </section>
+
+     <section id="products" class="product-grid"></section>
+
+<aside class="delivery-panel">
+  <h3>Estimation livraison</h3>
+  <label>Distance (km): <input id="input-distance" type="number" step="0.1" min="0" value="0"></label>
+  <label>Poids total (kg): <input id="input-weight" type="number" step="0.1" min="0" value="0"></label>
+  <label><input id="input-express" type="checkbox"> Express (+2000 Ar)</label>
+  <button id="calc-delivery" class="btn">Calculer frais livraison</button>
+  <div id="delivery-result">Frais : — Ar</div>
+</aside>
+     </main>
+    <!-- Cart modal -->
+    <div id="cart-modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="close-cart" class="close">✕</button>
+      <h2>Votre panier</h2>
+      <div id="cart-items"></div>
+      <div class="cart-summary">
+        <div>Sous-total : <span id="subtotal">0</span> Ar</div>
+        <div>Livraison : <span id="summary-delivery">0</span> Ar</div>
+        <div class="total">Total : <span id="summary-total">0</span> Ar</div>
+      </div>
+        <h3>Informations livraison</h3>
+  <label>Distance (km): <input id="checkout-distance" type="number" min="0" step="0.1" value="0"></label>
+  <label>Poids (kg): <input id="checkout-weight" type="number" min="0" step="0.1" value="0"></label>
+  <label><input id="checkout-express" type="checkbox"> Express (+2000 Ar)</label>
+
+  <h3>Moyen de paiement</h3>
+  <label><input type="radio" name="pm" value="mvola" checked> MVola</label>
+  <label><input type="radio" name="pm" value="airteltmoney"> Airtel Money</label>
+
+  <button id="checkout-btn" class="btn primary">Valider et payer (mock)</button>
+  <div id="checkout-result"></div>
+    </div>
+      </div>
+        <footer class="site-footer">
+    <div class="container">
+      <small>&copy; 2026 E‑Varotra — Marketplace Malagasy (mock payment)</small>
+    </div>
+        </footer>
+          <script src="/app.js"></script>
+          </body>
+</html>
