@@ -47,7 +47,7 @@ app.post('/api/delivery', (req, res) => {
  const { distance, weight, express } = req.body;
  const delivery = calculateDelivery({ distance, weight, express });
  res.json({ delivery });
-}); fa
+});
 // API : checkout (mock payment)
 app.post('/api/checkout', (req, res) => {
  try {
