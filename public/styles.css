@@ -46,3 +46,16 @@ body{
 .card h4{margin:.5rem 0}
 .card p{font-size:.9rem;color:#444}
 
+label{display:block;margin:.4rem 0}
+input[type="number"],
+input[type="text"],
+select{padding:.4rem;border-radius:6px;
+border:1px solid
+#ddd;width:100%;max-width:200px}
+.total{font-weight:700;margin-top:.5rem}
+@media (min-width:900px){
+main.container(display:grid;grid-templat
+e-columns:1fr 300px;gap:1rem}
+.hero{grid-column:1/2}
+.delivery-panelkposition:sticky;top:1rem;
+height:max-content}
