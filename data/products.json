@@ -1,0 +1,26 @@
+[
+  {
+    "id": "p1",
+    "title": "Hatsikana - Chapeau traditionnel",
+    "price": 25000,
+    "weight": 0.3,
+    "image": "/images/placeholder1.svg",
+    "description": "Chapeau fait main, idéal pour le marché et les cérémonies."
+  },
+  {
+    "id": "p2",
+    "title": "Lamba - Tissu traditionnel",
+    "price": 45000,
+    "weight": 0.8,
+    "image": "/images/placeholder2.svg",
+    "description": "Lamba coloré, tissé selon le style local."
+  },
+  {
+    "id": "p3",
+    "title": "Vary voatoto - Riz local (5kg)",
+    "price": 60000,
+    "weight": 5,
+    "image": "/images/placeholder3.svg",
+    "description": "Riz de qualité locale, sac 5 kg."
+  }
+]
