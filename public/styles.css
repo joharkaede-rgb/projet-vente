@@ -46,6 +46,32 @@ body{
 .card h4{margin:.5rem 0}
 .card p{font-size:.9rem;color:#444}
 
+.delivery-panel{margin-top:1.5rem;paddi
+ng:1rem;background:rgba(255,255,255,0
+.9);border-radius:8px}
+.modalkposition:fixed;left:0;top:0;right:0;
+bottom:0;background:rgba(0,0,0,0.5);dis
+play:flex;align-items:center;justify-conte
+nt:center;padding:1rem}
+.modal.hidden{display:none}
+.modal-content{width:100%;max-width:7
+00px;background:#fff;padding:1rem;bor
+der-radius:8px;position:relative)
+.close{position:absolute;right:10px;top:1
+Opx;border:none;background:transparen
+t;font-size:18px;cursor:pointer}
+.cart-summary{margin-top:1rem;padding
+:0.5rem;border-top:1px solid #eee)
+.cart-item{display:flex;gap:.5rem;align-it
+ems:center;padding:.5rem
+0;border-bottom:1px dashed #eee}
+.cart-item
+img{width:64px;height:48px;object-fit:c
+over;border-radius:6px}
+.site-footer(padding:1rem
+0;text-align:center;color:#555; margin-to
+p:2rem}
+
 label{display:block;margin:.4rem 0}
 input[type="number"],
 input[type="text"],
