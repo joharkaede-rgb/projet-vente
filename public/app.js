@@ -25,7 +25,6 @@ livery');
 const summaryTotalEl =
 document.getElementByld ('summary-tot
 al);
-  
 const checkoutBtn =
 document.getElementByld('checkout-bt
 n');
@@ -50,4 +49,28 @@ ult');
 const checkoutDistance =
 document.getElementByld ('checkout-di
 stance');
-const checkoutWeight =
+const checkoutWeight =document.getElementByld('checkout-we
+ight');
+const checkoutExpress =
+document.getElementByld('checkout-ex
+press');
+async function fetchProducts (){
+const res = await fetch(apiBase + '/api/
+products');
+products = await res.json();
+renderProducts(0:
+function renderProducts () {
+productsEl.innerHTML =";
+products.forEach (p →{
+Const card =
+document.createElement('div');
+card.className = 'card';
+card.innerHTML =
+<img src="${p.image}"
+alt="${p.title}">
+<h4>${p.title) </h4>
+<p>${p.description}< /p>
+<div><strong>$
+{p.price.toLocaleString('fr-FR')
+} Ar</strong></div>
+  
