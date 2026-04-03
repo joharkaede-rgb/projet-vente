@@ -26,3 +26,28 @@ const summaryTotalEl =
 document.getElementByld ('summary-tot
 al);
   
+const checkoutBtn =
+document.getElementByld('checkout-bt
+n');
+const checkout ResultEl =
+document.getElenmentByld (checkout-re
+sult');
+const inputDistance =
+document.getElementByld('input-distan
+ce');
+const inputWeight =
+document.getElementByld('input-weight
+);
+const inputExpress =
+document.getElementByld ('input-expres
+s);
+const calcDeliveryBtn =
+document.getElementByld ('calc-delivery
+);
+const deliveryResultEl =
+document.getElementByld('delivery-res
+ult');
+const checkoutDistance =
+document.getElementByld ('checkout-di
+stance');
+const checkoutWeight =
